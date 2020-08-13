@@ -16,6 +16,9 @@ function varargout = get_ppc_peaks(sts_align,cfg)
 %   toi
 %   trials
 
+% Copyright 2020, Benjamin Voloh
+% Distributed under a GNU GENERAL PUBLIC LICENSE
+
 %% checks/settings
 cfg = checkfield(cfg,'trials','all');
 cfg = checkfield(cfg,'userange',0);

@@ -4,6 +4,9 @@ function [phbin,smpInR,A_out,mu] = get_phaseBins_equalSamples(A,nbin)
 % Splits angles in A into "nbin" phase bins. Phase bin limits adjusted such
 % that approx equal number of smaples falls in each bin
 
+% Copyright 2020, Benjamin Voloh
+% Distributed under a GNU GENERAL PUBLIC LICENSE
+
 % prep
 bad = isnan(A);
 A_out = A;

@@ -1,3 +1,6 @@
+% Copyright 2020, Benjamin Voloh
+% Distributed under a GNU GENERAL PUBLIC LICENSE
+
 [rootpath,datapath,pypath,pyenvpath] = set_decoding_paths(0);
 
 stspath = [datapath '/MAT/STS_ALIGN_fft_distal_toi2'];

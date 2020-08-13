@@ -1,3 +1,9 @@
+% wrapper function to fit GLM to outcomes
+
+
+% Copyright 2020, Benjamin Voloh
+% Distributed under a GNU GENERAL PUBLIC LICENSE
+
 [rootpath,datapath] = set_ana_paths(0);
 
 stspath = [datapath '/MAT/STS_ALIGN_fft_distal_toi2'];

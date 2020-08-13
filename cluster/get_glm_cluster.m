@@ -9,6 +9,9 @@ function [glm_all,clustOut,theseAreas,theseAreasStr] = get_glm_cluster(glm_all,c
 %
 % if clustOut not provided, clusters first
 
+% Copyright 2020, Benjamin Voloh
+% Distributed under a GNU GENERAL PUBLIC LICENSE
+
 %% prep
 if nargin<2 || ~isstruct(clustOut)
     doCluster = 1;

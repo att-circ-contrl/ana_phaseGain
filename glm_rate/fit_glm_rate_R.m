@@ -1,5 +1,10 @@
 function out = fit_glm_rate_R(f_cfg,sts_align,tr_align,trlcond_align)
 % out = fit_glm_rate_R(CFG,sts_align,tr_align,trlcond_align)
+%
+% fit spike counts to outcome using GLM
+
+% Copyright 2020, Benjamin Voloh
+% Distributed under a GNU GENERAL PUBLIC LICENSE
 
 %% settings
 

@@ -13,6 +13,9 @@ function workerIndices = splitjobs(type,ind,njob,varargin)
 % njob: number of jobs/workers that will be used
 % w: weight of each job (expected processing, memory load..., default=uniform weight)
 
+% Copyright 2020, Benjamin Voloh
+% Distributed under a GNU GENERAL PUBLIC LICENSE
+
 % init
 workerIndices = cell(1,njob);
 

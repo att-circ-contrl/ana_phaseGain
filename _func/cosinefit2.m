@@ -1,4 +1,4 @@
-function [A, b, r] = cosinefit(x, y, b, flag);
+function [A, b, r] = cosinefit2(x, y, b, flag)
 
 %[A,b,r] = cosinefit(x,y,b,flag);
 %
@@ -15,7 +15,8 @@ function [A, b, r] = cosinefit(x, y, b, flag);
 %if the fourth input argument is 1, feedback will be 
 %given about the fit of the regression
 
-% added...
+% Copyright 2020, Thilo Womelsdorf and Benjamin Voloh
+% Distributed under a GNU GENERAL PUBLIC LICENSE
 
 A = NaN;  r = NaN; 
 if isempty(b), b = NaN; end % BV: switched, now this comes first
@@ -36,11 +37,11 @@ dC = sum(cos(2.*x));
 if isnan(b)%isempty(b),
   nom   = S*n + S*dC - C*dS; 
   denom = C*n - S*dS - C*dC;
-  if denom > 0,
+  if denom > 0
     b = atan(nom/denom);
-  elseif denom < 0,
+  elseif denom < 0
     b = atan(nom/denom) + pi;
-  elseif denom == 0,
+  elseif denom == 0
     b = 0.5 * pi;
   end
 end
@@ -49,7 +50,7 @@ A = 2 * (C*cos(b)+S*sin(b)) / (dS*cos(2*b)+dC*sin(2*b)+n);
 
 r = 1 - sum( (y - A*cos(x - b)).^2) / sum(y.^2); %proportion of explained variance
 
-if flag == 1,
+if flag == 1
   figure;
   plot(x, y); hold on;
   plot(x, A*cos(x - b), 'r');

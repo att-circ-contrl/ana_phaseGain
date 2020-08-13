@@ -1,5 +1,12 @@
 function out = cellFunction_cluster(Bnorm)
 % out = cellFunction_cluster(Bnorm)
+%
+% Clusters samples on the basis of beta weights. Clusters are defind in
+% terms of stability (how often they are clustered together when
+% bootstrapping)
+
+% Copyright 2020, Benjamin Voloh
+% Distributed under a GNU GENERAL PUBLIC LICENSE
 
 %% useful
 [ncell,nreg] = size(Bnorm);

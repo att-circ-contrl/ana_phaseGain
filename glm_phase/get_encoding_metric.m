@@ -11,6 +11,9 @@ function [Bstat,Bstat_orig] = get_encoding_metric(X,outputType)
 %       1: for data of form chan X 1 X bin X freq (eg R2)
 % output is in order {'outcome','rpe','rewHist'}
 
+% Copyright 2020, Benjamin Voloh
+% Distributed under a GNU GENERAL PUBLIC LICENSE
+
 if nargin<2
     outputType = 0;
 end

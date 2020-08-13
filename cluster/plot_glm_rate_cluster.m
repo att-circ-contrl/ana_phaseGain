@@ -1,3 +1,8 @@
+% plot results of clustering analysis
+
+% Copyright 2020, Benjamin Voloh
+% Distributed under a GNU GENERAL PUBLIC LICENSE
+
 [rootpath,datapath,pypath,pyenvpath,lfppath] = set_decoding_paths(0);
 
 savepath = [datapath '/_decoding/glm_rate_outcomeHistory_compare_noReversal_R_all2'];

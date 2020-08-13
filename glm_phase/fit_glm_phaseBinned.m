@@ -15,6 +15,9 @@ function [freq,B,SE,W,phaseLim,A,C,D,R2,sampleInfo] = fit_glm_phaseBinned(sts_al
 %         minSpike: minimum number of spikes
 %         minTrl: minumum number of trials
 
+% Copyright 2020, Benjamin Voloh
+% Distributed under a GNU GENERAL PUBLIC LICENSE
+
 %turn off fitting warnigs
 isWarn = 'off';
 warning(isWarn,'stats:glmfit:IterationLimit')

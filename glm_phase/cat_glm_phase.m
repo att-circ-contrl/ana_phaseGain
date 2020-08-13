@@ -14,6 +14,9 @@ function glm_phase = cat_glm_phase(indivPath,glm_all,cfg)
 %       theseData: skip all selection and retrieve this data. Nx2 cell
 %       array of {dataset name, lfp channel}
 
+% Copyright 2020, Benjamin Voloh
+% Distributed under a GNU GENERAL PUBLIC LICENSE
+
 
 % settings
 cfg = checkfield(cfg,'assertEncoding',0);

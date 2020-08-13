@@ -1,5 +1,8 @@
 #! /usr/bin/Rscript
 
+# Copyright 2020, Benjamin Voloh
+# Distributed under a GNU GENERAL PUBLIC LICENSE
+
 library("jsonlite")
 library("glmnet")
 library("R.matlab")

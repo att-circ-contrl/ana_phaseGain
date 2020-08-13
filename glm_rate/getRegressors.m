@@ -10,6 +10,8 @@ function out = getRegressors(tr_align,trlcond_align,cfg)
 %   outcomepad: default, [-5 -4 -3 -2 -1]
 %   outcomeTypes: default, [0 6]
 
+% Copyright 2020, Benjamin Voloh
+% Distributed under a GNU GENERAL PUBLIC LICENSE
 
 %% settings
 cfg = checkfield(cfg,'accWin',[10 0]);

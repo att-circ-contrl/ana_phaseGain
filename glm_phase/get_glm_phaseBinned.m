@@ -1,3 +1,7 @@
+% wrapper function fit GLM to phase binned spikes
+
+% Copyright 2020, Benjamin Voloh
+% Distributed under a GNU GENERAL PUBLIC LICENSE
 
 %% paths
 %{

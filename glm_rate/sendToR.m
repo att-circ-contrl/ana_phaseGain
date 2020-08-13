@@ -16,6 +16,9 @@ function out = sendToR(dat,varargin)
 % 
 % inspired by code from Runyan et al 2017
 
+% Copyright 2020, Benjamin Voloh
+% Distributed under a GNU GENERAL PUBLIC LICENSE
+
 % set R paths
 rootpath = set_decoding_paths(0);
 if contains(computer,'WIN') % PC
