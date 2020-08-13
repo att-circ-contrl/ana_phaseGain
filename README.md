@@ -5,4 +5,6 @@ Main analysis code for **Voloh, Omeisch, and Womelsdorf (2020) Phase of Firing C
 **Major functions**
 - ana_glm_rate: wrapper to perform regression on spikes
 - get_glm_cluster: wrapper to cluster on beta weights from regression
+- plot_glm_rate_cluster: Figure 2
 - get_glm_phaseBinned: wrapper to perform phase-based regression
+- plot_glm_phaseBinned: Figure 3,4,5
